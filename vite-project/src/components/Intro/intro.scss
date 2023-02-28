@@ -104,3 +104,108 @@
   line-height: 17px;
   border-radius: 36px;
 }
+@media only screen and (max-width: 845px) {
+  .intro__search-input {
+    width: 450px;
+    padding: 12px 16px 16px 42px;
+  }
+  .intro__search-button {
+    padding: 15px 24px;
+    top: -11px;
+  }
+}
+@media only screen and (max-width: 1290px) {
+  .intro__slide-wrapper {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .slick-prev {
+    top: 200px;
+    left: auto;
+    right: -80px;
+    &:hover {
+      background-color: #c8082329;
+    }
+  }
+}
+@media only screen and (max-width: 880px) {
+  .intro__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .intro__title {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 40px;
+  }
+  .intro__link-analiz {
+    font-size: 10px;
+    line-height: 13px;
+    padding: 13px 18px;
+    margin-right: 20px;
+    margin-left: 75px;
+  }
+  .intro__link-bolshe {
+    padding: 13px 18px;
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .intro__search-input {
+    width: 320px;
+    padding: 16px 16px 16px 42px;
+    font-size: 10px;
+  }
+  .intro__search-button {
+    padding: 16px 24px;
+    top: -13px;
+  }
+  .intro__img-wrapper {
+    display: none;
+  }
+  .intro__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .intro__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    width: 320px;
+  }
+  .intro__link-analiz {
+    padding: 16px 33px;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    max-width: 201px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 24px;
+  }
+  .intro__link-bolshe {
+    padding: 16px 24px;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    max-width: 201px;
+  }
+
+  .slick-prev {
+    top: calc(100% + 56px);
+    left: 60px;
+  }
+  .slick-next {
+    top: calc(100% + 56px);
+    right: 60px;
+  }
+}
