@@ -1,0 +1,189 @@
+.analiz {
+  margin-bottom: 100px;
+}
+.analiz__text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+.analiz__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: -0.01em;
+  color: #1a0909;
+  margin-bottom: 12px;
+}
+.analiz__subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #766b6b;
+}
+.analiz__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: #c80823;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url(../../assets/analizRightArrowImg.svg) no-repeat center
+      center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -14px;
+  }
+}
+.analiz__linkMobileDesign {
+  display: none;
+}
+// analiz text finished --------------------------------------------------------------------------------------------
+
+.analiz__list {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.analiz__list-item {
+  min-width: 263px;
+  max-width: 263px;
+  margin-right: 22px;
+  margin-bottom: 16px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 14px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.analiz__list-item:hover {
+  box-shadow: 0px 12px 24px rgba(118, 107, 107, 0.08);
+}
+.analiz__list-item:hover .analiz__item-link {
+  color: #ffffff;
+  background-color: #c80823;
+}
+.analiz__list-item:hover .analiz__item-link::before {
+  background: url(../../assets/analizBagHoverr.svg) no-repeat center center;
+}
+.analiz__item-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #1a0909;
+}
+.analiz__item-titleLink {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #c80823;
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 52px;
+}
+.analiz__item-titleLinkCard1 {
+  margin-bottom: 76px;
+}
+.analiz__description {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #766b6b;
+  margin-bottom: 32px;
+}
+.analiz__item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #766b6b;
+  padding: 16px 61px 16px 87px;
+  background: #f0f0f0;
+  border-radius: 36px;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../../assets/analizBag.svg) no-repeat center center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 61px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .analiz__title {
+    font-size: 29px;
+    line-height: 38px;
+  }
+  .analiz__subtitle {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .analiz__link {
+    display: none;
+  }
+  .analiz__text-wrapper {
+    margin-bottom: 24px;
+  }
+  // analiz text finished --------------------------------------------------------------------------------------------
+
+  .analiz__list {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .analiz__list-item {
+    min-width: 320px;
+    max-width: 320px;
+    margin-right: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .analiz__item-titleLink {
+    margin-bottom: 40px;
+  }
+  .analiz__cost-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .analiz__description {
+    text-align: left;
+    max-width: 70px;
+  }
+  .analiz__item-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #766b6b;
+    padding: 16px 24px 16px 50px;
+    &::before {
+      left: 24px;
+    }
+  }
+  .analiz__linkMobileDesign {
+    display: block;
+    text-align: center;
+    &::after{
+        right: 50px;
+    }
+  }
+}
