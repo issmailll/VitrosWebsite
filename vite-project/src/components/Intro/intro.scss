@@ -1,0 +1,106 @@
+.intro {
+  padding-top: 24px;
+  background-color: #fafafa;
+  margin-bottom: 100px;
+}
+.intro__search-container {
+  text-align: center;
+  margin-bottom: 47px;
+}
+.intro__search-input {
+  width: 750px;
+  text-align: left;
+  padding: 16px 16px 16px 42px;
+  border-radius: 40px;
+  border: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+.label {
+  position: relative;
+}
+.search-icon {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.intro__search-button {
+  background-color: #f0f0f0;
+  padding: 16px 24px;
+  border-radius: 36px;
+  position: absolute;
+  top: -14px;
+  right: 0;
+  border: none;
+  cursor: pointer;
+}
+// intro search finished ---------------------------------------------------------------------------------------------
+
+.intro__slide-wrapper {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.slick-prev {
+  background-color: #f0f0f0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  top: 150px;
+  left: -80px;
+  &:hover {
+    background-color: #c8082329;
+  }
+}
+.slick-next {
+  background-color: #f0f0f0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  top: 150px;
+  right: -80px;
+  &:hover {
+    background-color: #c8082329;
+  }
+}
+
+.intro__subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #766b6b;
+}
+.intro__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.01em;
+  color: #1a0909;
+  margin-top: 16px;
+  margin-bottom: 48px;
+  width: 400px;
+}
+.intro__title-span {
+  color: #c80823;
+  border-bottom: 3px solid #c80823;
+}
+.intro__link-analiz {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  padding: 16px 24px;
+  background-color: #c80823;
+  box-shadow: 0px 8px 20px rgba(200, 8, 35, 0.25);
+  border-radius: 36px;
+  margin-right: 45px;
+}
+.intro__link-bolshe {
+  background-color: #f0f0f0;
+  padding: 16px 24px;
+  color: #766b6b;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 36px;
+}
