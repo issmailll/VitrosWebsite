@@ -1,0 +1,133 @@
+.reg {
+  margin-top: 100px;
+  background-color: #fafafa;
+  margin-bottom: 100px;
+  padding: 72px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reg__title-wrapper {
+  max-width: 385px;
+}
+.reg__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: -0.01em;
+  color: #1a0909;
+  margin-bottom: 12px;
+}
+.reg__subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  color: #766b6b;
+}
+// form ----------------------------------------------------------------------------------
+.reg__form {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #f0f0f0;
+  max-width: 581px;
+}
+.reg__form-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.reg__form-item {
+  margin-right: 22px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+.labelBlock {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #766b6b;
+  display: block;
+  margin-bottom: 4px;
+}
+.reg__formInputStyle {
+  max-width: 254px;
+  min-width: 254px;
+  padding: 16px 42px 16px 16px;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+}
+.reg__btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+.reg__form-button {
+  background-color: transparent;
+  border: none;
+  padding: 16px 24px;
+  background-color: #c80823;
+  box-shadow: 0px 8px 20px rgba(200, 8, 35, 0.25);
+  border-radius: 36px;
+  color: #ffffff;
+  margin-right: 24px;
+}
+.reg__formBtn-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #766b6b;
+  max-width: 390px;
+}
+@media only screen and (max-width: 750px) {
+  .reg {
+    margin-top: 88px;
+    margin-bottom: 72px;
+    padding: 48px 0;
+    border-radius: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .reg__title-wrapper {
+    max-width: 343px;
+    margin-bottom: 50px;
+  }
+  .reg__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .reg__subtitle {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .reg__form {
+    max-width: 343px;
+  }
+  .reg__form-item {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .reg__btn-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .reg__formBtn-text {
+    max-width: 343px;
+    margin-bottom: 16px;
+  }
+  .reg__form-button {
+    display: inline;
+    width: 100%;
+    padding: 16px 0;
+    margin-left: 25px;
+  }
+}
